@@ -36,8 +36,9 @@
               font-size: 65px;
             }
             .foto_home{
-                height: 450px;
+                height: 85%;
                 margin-top: 19px;
+                width:90%;
             }
         </style>
 	<body style="background-color: #FFF">
@@ -76,6 +77,19 @@
                             </div>
                             <div class=" col-6 col-s-6">
                               <img src="${resource(dir: 'images', file: '/images/inicio_quienes/logotipo_proyecto_web.png')}"  class="img-rounded foto_home" id="imagen">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-6 col-s-6">
+                              <img src="${resource(dir: 'images', file: '/images/inicio_quienes/logo_sobre_nosotros_web.png')}"  class="img-rounded foto_home" id="imagen">
+                            </div>
+                            <div class=" col-6 col-s-6">
+                                <div class="column">
+                                    <div class="title_banner">Sobre nosotros</div>
+                                    <div>
+                                        Somos una empresa que se dedica a la venta de deliciosos postres para el deleite de ustedes, nuestros comensales. Radicamos en la ciudad de Cancún, Quintana Roo. Les garantizamos un servicio de excelencia, calidad en nuestros productos y sobre todo quedará satisfecho, con ganas de repetir.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
