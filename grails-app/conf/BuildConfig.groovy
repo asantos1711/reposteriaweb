@@ -40,7 +40,7 @@ grails.project.dependency.resolution = {
         mavenLocal()
         grailsCentral()
         mavenCentral()
-       // mavenRepo "http://insecure.repo1.maven.org/maven2/"
+        mavenRepo "http://insecure.repo1.maven.org/maven2/"
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
