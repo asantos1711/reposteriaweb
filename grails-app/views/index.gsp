@@ -49,28 +49,8 @@
                 <div class="col-1 col-s-1">
                 </div>
                 <div class="col-10 col-s-10 banner">
-                    <div class="column">
-                        <div class="row">
-                            <div class="col-2 btn_banner">
-                                Inicio
-                            </div>
-                            <div class="col-2 btn_banner">
-                                Postres
-                            </div>
-                            <div class="col-2 btn_banner">
-                                Iniciar Sesión
-                            </div>
-                            <div class="col-2 btn_banner">
-                                Registrarse
-                            </div>
-                            <div class="col-2 btn_banner">
-                                Carrito
-                            </div>
-                            <div class="col-2 btn_banner">
-                                FAQ
-                            </div>
-                        </div>
-                        
+                    <div class="column">                        
+                        <g:render template="banner"/>
                         <div class="row">
                             <div class=" col-6 col-s-6 title_banner">
                                 ¡ Es un placer atenderte !
@@ -99,29 +79,5 @@
             </div>
 	</body>
         
-        <footer>
-            <div class="col-12 col-s-12 row">
-                <div class="col-1 col-s-1">
-                </div>
-                <div class="col-10 col-s-10 banner">                    
-                    <div class="row">
-                        <div class="col-4 col-s-4 btn_banner">
-                            <i class="fa fa-phone"></i>
-                            999 175 5020
-                        </div>
-                        <div class="col-4 col-s-4 btn_banner">
-                            <i class="fa fa-envelope"></i>
-                            dvcancun@gmail.com
-                        </div>
-                        <div class="col-4 col-s-4 btn_banner">
-                             <i class="fa fa-facebook-square"></i>
-                            facebook.com/dvcancun
-                        </div>
-                           
-                    </div>
-                <div class="col-1 col-s-1">
-                </div>
-            </div>
-            </div>
-        </footer>
+        <g:render template="footer"/>
 </html>
