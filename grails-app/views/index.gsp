@@ -16,10 +16,14 @@
         <style>
             .banner{               
                 text-align: center;
-                margin-top:10px;
-                
+                margin-top:10px;                
             }
             .btn_banner{
+              background-color: #FCD9C8;
+              color: #000;
+              padding:10px
+            }
+            .btn_footer{
               background-color: #FCD9C8;
               color: #000;
               padding:10px
@@ -40,37 +44,20 @@
                 margin-top: 19px;
                 width:90%;
             }
+            a{
+                color: #000;
+                text-decoration: none;
+            }
+            
         </style>
 	<body style="background-color: #FFF">
-            <%--img url="assets/images/images/inicio_quienes/logotipo_proyecto_web.png"--%>
-            
-            
+            <%--img url="assets/images/images/inicio_quienes/logotipo_proyecto_web.png"--%>                        
             <div class="col-12 col-s-12 row">
                 <div class="col-1 col-s-1">
                 </div>
                 <div class="col-10 col-s-10 banner">
-                    <div class="column">
-                        <div class="row">
-                            <div class="col-2 btn_banner">
-                                Inicio
-                            </div>
-                            <div class="col-2 btn_banner">
-                                Postres
-                            </div>
-                            <div class="col-2 btn_banner">
-                                Iniciar Sesión
-                            </div>
-                            <div class="col-2 btn_banner">
-                                Registrarse
-                            </div>
-                            <div class="col-2 btn_banner">
-                                Carrito
-                            </div>
-                            <div class="col-2 btn_banner">
-                                FAQ
-                            </div>
-                        </div>
-                        
+                    <div class="column">                        
+                        <g:render template="banner"/>
                         <div class="row">
                             <div class=" col-6 col-s-6 title_banner">
                                 ¡ Es un placer atenderte !
@@ -79,19 +66,7 @@
                               <img src="${resource(dir: 'images', file: '/images/inicio_quienes/logotipo_proyecto_web.png')}"  class="img-rounded foto_home" id="imagen">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class=" col-6 col-s-6">
-                              <img src="${resource(dir: 'images', file: '/images/inicio_quienes/logo_sobre_nosotros_web.png')}"  class="img-rounded foto_home" id="imagen">
-                            </div>
-                            <div class=" col-6 col-s-6">
-                                <div class="column">
-                                    <div class="title_banner">Sobre nosotros</div>
-                                    <div>
-                                        Somos una empresa que se dedica a la venta de deliciosos postres para el deleite de ustedes, nuestros comensales. Radicamos en la ciudad de Cancún, Quintana Roo. Les garantizamos un servicio de excelencia, calidad en nuestros productos y sobre todo quedará satisfecho, con ganas de repetir.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
                  <div class="col-1 col-s-1">
@@ -99,29 +74,5 @@
             </div>
 	</body>
         
-        <footer>
-            <div class="col-12 col-s-12 row">
-                <div class="col-1 col-s-1">
-                </div>
-                <div class="col-10 col-s-10 banner">                    
-                    <div class="row">
-                        <div class="col-4 col-s-4 btn_banner">
-                            <i class="fa fa-phone"></i>
-                            999 175 5020
-                        </div>
-                        <div class="col-4 col-s-4 btn_banner">
-                            <i class="fa fa-envelope"></i>
-                            dvcancun@gmail.com
-                        </div>
-                        <div class="col-4 col-s-4 btn_banner">
-                             <i class="fa fa-facebook-square"></i>
-                            facebook.com/dvcancun
-                        </div>
-                           
-                    </div>
-                <div class="col-1 col-s-1">
-                </div>
-            </div>
-            </div>
-        </footer>
+        <g:render template="footer"/>
 </html>
