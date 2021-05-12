@@ -16,10 +16,14 @@
         <style>
             .banner{               
                 text-align: center;
-                margin-top:10px;
-                
+                margin-top:10px;                
             }
             .btn_banner{
+              background-color: #FCD9C8;
+              color: #000;
+              padding:10px
+            }
+            .btn_footer{
               background-color: #FCD9C8;
               color: #000;
               padding:10px
@@ -40,11 +44,14 @@
                 margin-top: 19px;
                 width:90%;
             }
+            a{
+                color: #000;
+                text-decoration: none;
+            }
+            
         </style>
 	<body style="background-color: #FFF">
-            <%--img url="assets/images/images/inicio_quienes/logotipo_proyecto_web.png"--%>
-            
-            
+            <%--img url="assets/images/images/inicio_quienes/logotipo_proyecto_web.png"--%>                        
             <div class="col-12 col-s-12 row">
                 <div class="col-1 col-s-1">
                 </div>
@@ -59,19 +66,7 @@
                               <img src="${resource(dir: 'images', file: '/images/inicio_quienes/logotipo_proyecto_web.png')}"  class="img-rounded foto_home" id="imagen">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class=" col-6 col-s-6">
-                              <img src="${resource(dir: 'images', file: '/images/inicio_quienes/logo_sobre_nosotros_web.png')}"  class="img-rounded foto_home" id="imagen">
-                            </div>
-                            <div class=" col-6 col-s-6">
-                                <div class="column">
-                                    <div class="title_banner">Sobre nosotros</div>
-                                    <div>
-                                        Somos una empresa que se dedica a la venta de deliciosos postres para el deleite de ustedes, nuestros comensales. Radicamos en la ciudad de Cancún, Quintana Roo. Les garantizamos un servicio de excelencia, calidad en nuestros productos y sobre todo quedará satisfecho, con ganas de repetir.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
                  <div class="col-1 col-s-1">

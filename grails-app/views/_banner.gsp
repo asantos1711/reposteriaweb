@@ -9,14 +9,23 @@
         Inicio
     </div>
     <div class="col-2 btn_banner">
-        Postres
+        <g:link controller="Postres" action="index">
+           Postres
+        </g:link>
+        
     </div>
     <div class="col-2 btn_banner">
-        Iniciar Sesión
+        <g:link controller="Empresa" action="index">
+          Nuestra empresa
+       </g:link>
+       
     </div>
     <div class="col-2 btn_banner">
-        Registrarse
+        <g:link controller="Postres" action="index">
+           Mi cuenta
+        </g:link>
     </div>
+    
     <div class="col-2 btn_banner">
         Carrito
     </div>

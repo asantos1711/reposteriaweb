@@ -15,7 +15,7 @@ hibernate {
 }
 
 // environment specific settings
-environments {
+/*environments {
     development {
         dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
@@ -66,4 +66,4 @@ environments {
             }
         }
     }
-}
+}*/
