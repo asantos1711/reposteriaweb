@@ -12,47 +12,13 @@
             <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
-        <style>
-            .banner{               
-                text-align: center;
-                margin-top:10px;                
-            }
-            .btn_banner{
-              background-color: #FCD9C8;
-              color: #000;
-              padding:10px
-            }
-            .btn_footer{
-              background-color: #FCD9C8;
-              color: #000;
-              padding:10px
-            }
-            .btn_banner:hover{
-              background-color: #799AFA;
-              color: #FFF;
-              padding:10px
-              font-family: Open-sans;
-            }
-            .title_banner{              
-              font-family: 'Lobster';
-              margin-top:50px;
-              font-size: 65px;
-            }
-            .foto_home{
-                height: 85%;
-                margin-top: 19px;
-                width:90%;
-            }
-            a{
-                color: #000;
-                text-decoration: none;
-            }
-            
-        </style>
+            <link rel="stylesheet" href="css/style.css">
+        </head>
 	<body style="background-color: #FFF">
+            
             <%--img url="assets/images/images/inicio_quienes/logotipo_proyecto_web.png"--%>                        
-            <div class="col-12 col-s-12 row">
+            <div class="col-12 col-s-12 row"> 
+                <center class="title">Dulce vida</center>
                 <div class="col-1 col-s-1">
                 </div>
                 <div class="col-10 col-s-10 banner">
@@ -63,7 +29,7 @@
                                 ¡ Es un placer atenderte !
                             </div>
                             <div class=" col-6 col-s-6">
-                              <img src="${resource(dir: 'images', file: '/images/inicio_quienes/logotipo_proyecto_web.png')}"  class="img-rounded foto_home" id="imagen">
+                              <img src="${resource(dir: 'images', file: 'inicio_quienes/logotipo_proyecto_web.png')}"  class="img-rounded foto_home" id="imagen">
                             </div>
                         </div>
                         

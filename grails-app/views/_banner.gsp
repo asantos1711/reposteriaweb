@@ -6,7 +6,10 @@
 
 <div class="row">
     <div class="col-2 btn_banner">
+        <a href="/web">
         Inicio
+
+        </a>
     </div>
     <div class="col-2 btn_banner">
         <g:link controller="Postres" action="index">
@@ -21,7 +24,7 @@
        
     </div>
     <div class="col-2 btn_banner">
-        <g:link controller="Postres" action="index">
+        <g:link controller="Usuarios" action="index">
            Mi cuenta
         </g:link>
     </div>
