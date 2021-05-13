@@ -54,12 +54,16 @@
             width:90%;
         }
         .foto_galeria{
-            height: 15%;
+            
             margin-top: 10px;
             width:100%;
         }
         a{
             color: #000;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #FFF;
             text-decoration: none;
         }
 
@@ -71,23 +75,20 @@
             </div>
             <div class="col-10 col-s-10 banner">
                 <g:render template="/banner"/>                
-                <div class="row">       
-                    
-                    <div class="col-3 col-s-3">                        
-                        <img src="${resource(dir: 'images', file: '/images/nuestros_postres/arroz_postre.jpg')}"  class="foto_galeria" id="imagen">
-                         <img src="${resource(dir: 'images', file: '/images/nuestros_postres/helados_postres.jpg')}"  class="foto_galeria" id="imagen">
-                    </div>
-                    <div class=" col-3 col-s-3">
-                        <img src="${resource(dir: 'images', file: '/images/nuestros_postres/cuernitos_postres.jpg')}"  class="foto_galeria" id="imagen">
+                <div class="row">                                               
+                    <div class="col-4 col-s-4">                        
                         <img src="${resource(dir: 'images', file: '/images/nuestros_postres/paletas_postres.jpg')}"  class="foto_galeria" id="imagen">
-                    </div>
-                    <div class=" col-3 col-s-3">
                         <img src="${resource(dir: 'images', file: '/images/nuestros_postres/frappe_postre.jpg')}"  class=" foto_galeria" id="imagen">
-                        <img src="${resource(dir: 'images', file: '/images/nuestros_postres/pastel_postres.jpg')}"  class=" foto_galeria" id="imagen">
+                        
                     </div>
-                    <div class=" col-3 col-s-3">
+                    <div class="col-4 col-s-4">
+                        <img src="${resource(dir: 'images', file: '/images/nuestros_postres/cuernitos_postres.jpg')}"  class="foto_galeria" id="imagen">
+                        <img src="${resource(dir: 'images', file: '/images/nuestros_postres/helados_postres.jpg')}"  class="foto_galeria" id="imagen">
+                        <img src="${resource(dir: 'images', file: '/images/nuestros_postres/pastel_postres.jpg')}"  class=" foto_galeria" id="imagen">                                            
+                    </div>
+                    <div class=" col-4 col-s-4">
                         <img src="${resource(dir: 'images', file: '/images/nuestros_postres/galletas_postres.jpg')}"  class="foto_galeria" id="imagen">
-                        <img src="${resource(dir: 'images', file: '/images/nuestros_postres/galletas_postres.jpg')}"  class="foto_galeria" id="imagen">
+                        <img src="${resource(dir: 'images', file: '/images/nuestros_postres/arroz_postre.jpg')}"  class="foto_galeria" id="imagen">
                     </div>
                 </div>                                    
             </div>
