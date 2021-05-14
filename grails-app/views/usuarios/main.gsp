@@ -32,7 +32,13 @@
                         <div class="column">
                             <div class="title_banner">Iniciar sesión</div>
                             <div>
-                                
+                                <g:form controller="Usuarios" action="iniciarsesion" method="post">
+                                    <label>Correo: </label>
+                                    <g:field  name="firstName" value="${cliente.correo}"/><br/>
+                                    <label>Contraseña: </label>
+                                    <g:field  name="lastName"/><br/>
+                                    <g:actionSubmit value="Iniciarsesion"/>
+                                </g:form>
                             </div>
                         </div>
                     </div>

@@ -1,13 +1,12 @@
 package ventas
 
-import java.util.Formatter.DateTime
 
 class Ventas {
 
     Integer id
     Integer idCliente
     Double  total
-    DateTime fecha
+    Date fecha
     
     static mapping = {
         table "ventas"

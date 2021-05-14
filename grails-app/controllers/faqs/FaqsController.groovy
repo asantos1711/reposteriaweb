@@ -12,7 +12,7 @@ class FaqsController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond Faqs.list(params), model:[faqsInstanceCount: Faqs.count()]
+        respond Faqs.list(params), model:[faqsInstanceCount: Faqs.count(),listfaqs:Faqs.list()]
     }
 
     def show(Faqs faqsInstance) {
