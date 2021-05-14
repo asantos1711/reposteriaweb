@@ -33,6 +33,8 @@
         Carrito
     </div>
     <div class="col-2 btn_banner">
-        FAQ
+        <g:link controller="faqs" action="index">
+           FAQS
+        </g:link>
     </div>
 </div>
