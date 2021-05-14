@@ -1,4 +1,5 @@
 package empresa
+import clientes.*
 
 class EmpresaController {
 
