@@ -4,7 +4,8 @@ class Fotosproductos {
     
     Integer id
     String url
-    Integer idproducto
+    //Integer idproducto
+    static belongsTo = [producto:Productos]
     
 
     static mapping = {
@@ -13,7 +14,7 @@ class Fotosproductos {
         
         id              column:"id_foto", generator:"increment"
         url             column:"url"
-        idproducto      column:"id_producto"
+        producto      column:"id_producto"
          
         sort id: "asc"
     }
@@ -21,6 +22,6 @@ class Fotosproductos {
     static constraints = {
         id         nullable:false, blank:false
         url     nullable:false, blank:false
-        idproducto     nullable:false, blank:false
+        producto     nullable:false, blank:false
     }
 }
