@@ -33,11 +33,17 @@
                             <div class="title_banner">Iniciar sesión</div>
                             <div>
                                 <g:form controller="Usuarios" action="iniciarsesion" method="post">
-                                    <label>Correo: </label>
-                                    <g:field  name="firstName" value="${cliente.correo}"/><br/>
-                                    <label>Contraseña: </label>
-                                    <g:field  name="lastName"/><br/>
-                                    <g:actionSubmit value="Iniciarsesion"/>
+                                    <div style="margin-top:10px">
+                                        <label>Correo: </label>
+                                        <g:field  name="firstName" value="${cliente.correo}"/><br/>
+                                    </div>
+                                    <div style="margin-top:10px">
+                                        <label>Contraseña: </label>
+                                        <g:field  name="lastName"/><br/>
+                                    </div>
+                                    <div style="margin-top:10px">
+                                        <g:actionSubmit value="Iniciar sesion"/>
+                                    </div>
                                 </g:form>
                             </div>
                         </div>
