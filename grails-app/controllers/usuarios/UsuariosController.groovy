@@ -24,7 +24,7 @@ class UsuariosController {
                
        try{                       
             //print person
-            person.id = ultimoId ? ultimoId.toInteger() + 10 : ultimoId+3
+            //person.id = ultimoId ? ultimoId.toInteger() + 10 : ultimoId+3
             person.nombre = params.firstName
             person.correo = "correo"
             person.password = "123456"

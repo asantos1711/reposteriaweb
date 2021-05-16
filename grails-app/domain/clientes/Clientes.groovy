@@ -19,7 +19,7 @@ class Clientes implements Serializable {
     }
     
     static constraints = {
-        id  nullable:false, blank:false
+        //id  nullable:false, blank:false
         nombre  nullable:false, blank:false
         correo nullable:false, blank:false
         password nullable:false, blank:false
