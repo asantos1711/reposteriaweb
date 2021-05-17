@@ -79,6 +79,45 @@ width:100%;
 .title_btn_mas{
     font-family: "Open sans"
 }
+
+.card
+{
+ /*/ margin-left: 25%;*/
+  /*margin-right: 25%;*/
+  margin-top: 5%;
+  margin-bottom: 2%;
+  background-color: white;
+  padding: 2%;
+  box-shadow:  5px 5px 15px #e1e1e3, -5px -5px 15px #ffffff;
+}
+
+.p{
+    font-size: 20px;
+    font-family: 'Lobster';
+}
+
+.pt{
+    font-size: 30px;
+    font-family: 'Lobster';
+}
+
+.pb{
+    font-size: 10px;
+    font-family: 'Lobster';
+}
+.btn-info{
+    background-color: #799AFA;
+    border-color: #799AFA;
+    color: white;
+    text-align: center;
+}
+
+.btn-info:hover{
+    background-color: #6783d6;
+    border-color: #6783d6;
+    color: white;
+     text-align: center;
+}
 .title_mas{
     font-size: 25px;
     font-family: "Open sans"
