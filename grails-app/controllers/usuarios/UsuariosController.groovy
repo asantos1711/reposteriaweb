@@ -133,6 +133,7 @@ class UsuariosController {
     def cerrar_sesion(){        
         session.user = null
         session.username = null
+        session.carrito = null
         
         render(view: "main")                 
          
