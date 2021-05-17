@@ -9,7 +9,7 @@
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
         <%--meta name="layout" content="main" #cbe8f5/--%>
-            <title>Dulce vida - Iniciar sesión</title>	
+            <title>Dulce vida - Registro</title>	
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
@@ -28,31 +28,30 @@
                     <g:render template="/banner"/>
                 </div>
                 <div class="row ">
+                    <g:if test="${flash.message}">
+                        <div class="alert alert-danger">${flash.message}</div>
+                    </g:if>
                     <div class=" col-6 col-s-6">
                         <div class="column">
-                            <div class="title_banner">Iniciar sesión</div>
+                            <div class="title_banner">Registro</div>
                             <div>
-                                <g:form controller="Usuarios" action="iniciarsesion" method="post">
+                                <g:form controller="Usuarios" action="registrar" method="post">
+                                    <div style="margin-top:10px">
+                                        <label>Nombre completo </label>
+                                        <g:field  name="name"/><br/>
+                                    </div>
                                     <div style="margin-top:10px">
                                         <label>Correo: </label>
                                         <g:field  name="email"/><br/>
                                     </div>
                                     <div style="margin-top:10px">
                                         <label>Contraseña: </label>
-                                        <g:field  name="pwd"/><br/>
+                                        <g:field  name="password"/><br/>
                                     </div>
                                     <div style="margin-top:10px" >
-                                        <g:actionSubmit value="Iniciar sesion" class="btn-blue"/>
+                                        <g:actionSubmit value="registrar" class="btn-blue"/>
                                     </div>
-                                </g:form>
-                                 <div style="margin-top:10px"></div>
-                                <g:link controller="Usuarios" action="viewRegistro">
-                                  
-                                        <label>¿No tienes cuenta? Registrate </label>                                        
-                                    
-                                </g:link>
-                                
-                                
+                                </g:form>                                                                
                             </div>
                         </div>
                     </div>
