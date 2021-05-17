@@ -124,4 +124,11 @@ class UsuariosController {
     def perfil(){
         render(view:"perfil")         
     }
+    def cerrar_sesion(){        
+        session.user = null
+        session.username = null
+        
+        render(view: "main")                 
+         
+    }
 }
