@@ -36,18 +36,15 @@
 
                 <g:each in="${listaProductos}" var="producto">
                     <div class="row">    
-                        <p>${producto.id}</p>
-                        <g:each in="${listaFotos(producto.id)}" var="fotos">
-                            <div class="col-4 col-s-4">
-                                <p>${fotos.id}</p>
-                                <!--img src="${fotos[producto.id].url}"  class="foto_galeria"-->
+                        
+                        <g:each in="${listaFotos[producto.id]}" var="fotos">
+                            <div class="col-3 col-s-3">
+                                <p>${listaFotos.(producto.id)}</p>
+                                <img src="${fotos.url}" class="foto_galeria" height="150">
                             </div>
                         </g:each>
                     </div>  
                  </g:each>
-                <a href="https://www.qries.com/">
-                    <img alt="Qries" src="https://www.annarecetasfaciles.com/files/20190301_142607-1.jpg" width=150" height="70">
-                 </a>
                            <!--div class="col-4 col-s-4">                        
                                <img src="${resource(dir: 'images', file: 'nuestros_postres/paletas_postres.jpg')}"  class="foto_galeria" id="imagen">
                                <img src="${resource(dir: 'images', file: 'nuestros_postres/frappe_postre.jpg')}"  class=" foto_galeria" id="imagen">
