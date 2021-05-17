@@ -95,13 +95,26 @@ width:100%;
     font-size: 20px;
     font-family: 'Lobster';
 }
+
+.pt{
+    font-size: 30px;
+    font-family: 'Lobster';
+}
+
+.pb{
+    font-size: 10px;
+    font-family: 'Lobster';
+}
 .btn-info{
     background-color: #799AFA;
     border-color: #799AFA;
     color: white;
+    text-align: center;
 }
 
 .btn-info:hover{
-    background-color: #799AFf;
-    border-color: #799AFA;
+    background-color: #6783d6;
+    border-color: #6783d6;
+    color: white;
+     text-align: center;
 }

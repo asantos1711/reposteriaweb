@@ -23,5 +23,15 @@ class PostresController {
        render(view:"main",model:[listaProductos:listaProductos, listaFotos:listaFotos])
     }
     
-    
+    def detalle() { 
+        
+       println params
+       Productos producto = Productos.get(params.producto)
+       List<Fotosproductos> listaFotos =Fotosproductos.findAll("from Fotosproductos as b where b.producto = ${producto.id}")
+       
+        //println producto.nombre
+        //println listaFotos.first().url
+        
+       render(view:"detalle",model:[producto:producto, listaFotos:listaFotos])
+    }
 }
