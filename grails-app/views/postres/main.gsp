@@ -34,26 +34,30 @@
             <div class="col-10 col-s-10 banner">
                 <g:render template="/banner"/>     
 
-                
-                <div class="row">                                               
-                    <div class="col-4 col-s-4">                        
-                        <img src="${resource(dir: 'images', file: 'nuestros_postres/paletas_postres.jpg')}"  class="foto_galeria" id="imagen">
-                        <img src="${resource(dir: 'images', file: 'nuestros_postres/frappe_postre.jpg')}"  class=" foto_galeria" id="imagen">
-                        
-                    </div>
-                    <div class="col-4 col-s-4">
-                        <img src="${resource(dir: 'images', file: 'nuestros_postres/cuernitos_postres.jpg')}"  class="foto_galeria" id="imagen">
-                        <img src="${resource(dir: 'images', file: 'nuestros_postres/helados_postres.jpg')}"  class="foto_galeria" id="imagen">
-                        <img src="${resource(dir: 'images', file: 'nuestros_postres/pastel_postres.jpg')}"  class=" foto_galeria" id="imagen">                                            
-                    </div>
-                    <div class=" col-4 col-s-4">
-                        <img src="${resource(dir: 'images', file: 'nuestros_postres/galletas_postres.jpg')}"  class="foto_galeria" id="imagen">
-                        <img src="${resource(dir: 'images', file: 'nuestros_postres/arroz_postre.jpg')}"  class="foto_galeria" id="imagen">
-                    </div>
-                </div>  
+                <g:each in="${listaProductos}" var="producto">
+                    <div class="row">    
+                        <p>${producto.id}</p>
+                        <g:each in="${listaFotos(producto.id)}" var="fotos">
+                            <div class="col-4 col-s-4">
+                                <p>${fotos.id}</p>
+                                <!--img src="${fotos[producto.id].url}"  class="foto_galeria"-->
+                            </div>
+                        </g:each>
+                    </div>  
+                 </g:each>
+                <a href="https://www.qries.com/">
+                    <img alt="Qries" src="https://www.annarecetasfaciles.com/files/20190301_142607-1.jpg" width=150" height="70">
+                 </a>
+                           <!--div class="col-4 col-s-4">                        
+                               <img src="${resource(dir: 'images', file: 'nuestros_postres/paletas_postres.jpg')}"  class="foto_galeria" id="imagen">
+                               <img src="${resource(dir: 'images', file: 'nuestros_postres/frappe_postre.jpg')}"  class=" foto_galeria" id="imagen">
 
-                
-            </div>
+                           </div-->
+
+
+
+             </div>
+            
             <div class="col-1 col-s-1">
             </div>
         </div>
