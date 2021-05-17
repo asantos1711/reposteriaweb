@@ -19,7 +19,7 @@ class Pedidos {
     }
     
     static constraints = {
-        id  nullable:false, blank:false
+        //id  nullable:false, blank:false
         idCliente  nullable:false, blank:false
         idVenta nullable:false, blank:false
         estado nullable:false, blank:false

@@ -21,7 +21,7 @@ class Ventas {
     }
     
     static constraints = {
-        id  nullable:false, blank:false
+        //id  nullable:false, blank:false
         idCliente  nullable:false, blank:false
         total nullable:false, blank:false
         fecha nullable:false, blank:false

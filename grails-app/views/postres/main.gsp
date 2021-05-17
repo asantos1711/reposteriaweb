@@ -33,21 +33,27 @@
             </div>
             <div class="col-10 col-s-10 banner">
                 <g:render template="/banner"/>     
-                
+                <g:if test="${flash.message}">
+                    <div class="alert alert-success">${flash.message}</div>
+                </g:if>
                 <div class="row">
-                <g:each in="${listaProductos}" var="producto">  
+                <g:each in="${listaProductos}" var="pro">  
                         <div class="col-4 col-s-4">
                             <div class="card">
-                                <img src="${listaFotos[producto.id].first().url}" class="foto_galeria" height="250">
-                                <p class="p">${producto.nombre} -   ${producto.precio} MXN</p>
+                                <img src="${listaFotos[pro.id].first().url}" class="foto_galeria" height="250">
+                                <p class="p">${pro.nombre} -   ${pro.precio} MXN</p>
                                 
-                                <p class="p">${producto.cantidad} ${producto.unidad} </p>
+                                <p class="p">${pro.cantidad} ${pro.unidad} </p>
                                 
                                 <div class="row container" style="margin: 1% 1% 1% " >
-                                    <btn  class="btn btn-info col-4 col-s-4 p" ><i class="fa fa-cart-plus fa-2x"></i></btn>
+                                    <btn class="btn btn-info col-4 col-s-4 p" >
+                                        <g:link class="p" action="agregaracarrito" params="[producto:pro.id,menu:pro.id]" >
+                                        <i class="fa fa-cart-plus fa-2x"></i>
+                                        </g:link>
+                                    </btn>
                                     <div class="col-3 col-s-3" ></div>
                                    <btn  class="btn btn-info col-4 col-s-4 p" >
-                                       <g:link class="p" action="detalle" params="[producto:producto.id]">
+                                        <g:link class="p" action="detalle" params="[producto:pro.id]">
                                            <p class="p">Detalles</p>
                                        </g:link>
                                    </btn>

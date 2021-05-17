@@ -20,7 +20,7 @@ class Productoventas {
     }
     
     static constraints = {
-        id  nullable:false, blank:false
+        //id  nullable:false, blank:false
         idProducto  nullable:false, blank:false
         idVenta nullable:false, blank:false
         cantidad nullable:false, blank:false

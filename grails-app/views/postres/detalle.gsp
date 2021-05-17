@@ -33,7 +33,9 @@
             </div>
             <div class="col-10 col-s-10 banner">
                 <g:render template="/banner"/>     
-                
+                <g:if test="${flash.message}">
+                    <div class="alert alert-success">${flash.message}</div>
+                </g:if>
                 <div class="col-12 col-s-12">
                     <div class="card">
                         <div class="row">
@@ -52,8 +54,11 @@
                                 <p class="p">
                                     ${producto.cantidad} ${producto.unidad} - $ ${producto.precio} MXN
                                 </p>
+                               
                                 <btn  class="btn btn-info col-6 col-s-6 pb" >
+                                    <g:link class="pb" action="agregaracarrito" params="[producto:producto.id]" >
                                     <i class="fa fa-cart-plus fa-2x">Agregar al carrito</i>
+                                    </g:link>
                                 </btn>
                             </div>
                         </div>
