@@ -37,19 +37,35 @@
                             <div>
                                 <g:form controller="Usuarios" action="registrar" method="post">
                                     <div style="margin-top:10px">
-                                        <label>Nombre completo </label>
-                                        <g:field  name="name"/><br/>
+                                        <%--label>Nombre completo </label>
+                                        <g:field  name="name"/><br/--%>
+                                        <div style="margin-top:10px">
+                                            <%--label>Correo: </label>
+                                            <g:field  name="email"/><br/--%>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" name="name" id="floatingInput" placeholder="name@example.com">
+                                                <label for="floatingInput">Nombre</label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div style="margin-top:10px">
-                                        <label>Correo: </label>
-                                        <g:field  name="email"/><br/>
+                                        <%--label>Correo: </label>
+                                        <g:field  name="email"/><br/--%>
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com">
+                                            <label for="floatingInput">Correo electrónico</label>
+                                        </div>
                                     </div>
                                     <div style="margin-top:10px">
-                                        <label>Contraseña: </label>
-                                        <g:field  name="password"/><br/>
+                                        <%--label>Contraseña: </label>
+                                        <g:field  name="password"/><br/--%>
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
+                                            <label for="floatingPassword">Contraseña</label>
+                                          </div>
                                     </div>
                                     <div style="margin-top:10px" >
-                                        <g:actionSubmit value="registrar" class="btn-blue"/>
+                                        <g:actionSubmit value="Registrar" class="btn btn-shop"/>
                                     </div>
                                 </g:form>                                                                
                             </div>

@@ -34,22 +34,28 @@
                             <div>
                                 <g:form controller="Usuarios" action="iniciarsesion" method="post">
                                     <div style="margin-top:10px">
-                                        <label>Correo: </label>
-                                        <g:field  name="email"/><br/>
+                                        <%--label>Correo: </label>
+                                        <g:field  name="email"/><br/--%>
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com">
+                                            <label for="floatingInput">Correo electrónico</label>
+                                        </div>
                                     </div>
                                     <div style="margin-top:10px">
-                                        <label>Contraseña: </label>
-                                        <g:field  name="pwd"/><br/>
+                                        <%--label>Contraseña: </label>
+                                        <g:field  name="pwd"/><br/--%>
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" name="pwd" id="floatingPassword" placeholder="Password">
+                                            <label for="floatingPassword">Contraseña</label>
+                                          </div>
                                     </div>
-                                    <div style="margin-top:10px" >
-                                        <g:actionSubmit value="Iniciar sesion" class="btn-blue"/>
+                                    <div style="margin-top:25px" >
+                                        <g:actionSubmit value="Iniciar sesion" class="btn btn-shop"/>
                                     </div>
                                 </g:form>
                                  <div style="margin-top:10px"></div>
-                                <g:link controller="Usuarios" action="viewRegistro">
-                                  
-                                        <label>¿No tienes cuenta? Registrate </label>                                        
-                                    
+                                <g:link controller="Usuarios" action="viewRegistro" class="link_cuenta">                                  
+                                        <label>¿No tienes cuenta? Registrate </label>                                                                            
                                 </g:link>                               
                                 
                                 
