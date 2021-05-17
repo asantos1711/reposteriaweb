@@ -50,7 +50,7 @@
                                   
                                         <label>¿No tienes cuenta? Registrate </label>                                        
                                     
-                                </g:link>
+                                </g:link>                               
                                 
                                 
                             </div>

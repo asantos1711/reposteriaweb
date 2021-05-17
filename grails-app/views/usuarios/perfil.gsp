@@ -42,6 +42,10 @@
                                     
                                 </g:form>                                                    
                             </div>
+                            
+                            <g:link controller="Usuarios" action="cerrar_sesion">
+                                    <label>¿No tienes cuenta? Registrate </label>                                        
+                            </g:link>
                         </div>
                     </div>
                     <div class=" col-6 col-s-6">
