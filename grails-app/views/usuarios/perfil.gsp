@@ -30,22 +30,22 @@
                 <div class="row ">                   
                     <div class=" col-6 col-s-6">
                         <div class="column">
+                            <div style="margin-top: 20px">
+                                <g:link controller="Usuarios" action="cerrar_sesion" class="link_cuenta">
+                                        <label>Cerrar sesión </label>                                        
+                                </g:link>
+                            </div>
                             <div class="title_banner">Mi cuenta</div>
                             <div>
-                                <g:form controller="Usuarios" action="registrar" method="post">
-                                    <div class="top_margen">
-                                        <label class="title_perfil">¡Bienvenido ${session.user.nombre}!</label>                                        
-                                    </div>                                                                   
-                                    <div class="top_margen">
-                                        <label>Aquí puedes encontrar la lista de tus pedidos</label>                                        
-                                    </div>                                                                   
-                                    
-                                </g:form>                                                    
+                               <div class="top_margen">
+                                    <label class="title_perfil">¡Bienvenido ${session.user.nombre}!</label>                                        
+                                </div>                                                                   
+                                <div class="top_margen">
+                                    <label>Aquí puedes encontrar la lista de tus pedidos</label>                                        
+                                </div>                                                    
                             </div>
                             
-                            <g:link controller="Usuarios" action="cerrar_sesion">
-                                    <label>¿No tienes cuenta? Registrate </label>                                        
-                            </g:link>
+                            
                         </div>
                     </div>
                     <div class=" col-6 col-s-6">

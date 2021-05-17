@@ -104,7 +104,13 @@ class UsuariosController {
              }
             
             flash.message =  "Guardado"
-             alerta = HerramientasService.CrearAlerta("success",flash.message)   
+            alerta = HerramientasService.CrearAlerta("success",flash.message) 
+            
+            def UsuarioInstance = Clientes.findByCorreo(person.correo)
+            print(UsuarioInstance)
+            session.user = UsuarioInstance
+            session.username = UsuarioInstance?.nombre?.toUpperCase()   
+            
             
        }catch(ex){
            print("excepcion..."+ex)
@@ -113,7 +119,7 @@ class UsuariosController {
        
         //render "Success!"
         
-        render(view:"registro",model:[alerta:alerta])
+        redirect(view: "perfil")
     }
     
     
