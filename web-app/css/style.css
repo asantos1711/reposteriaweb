@@ -75,3 +75,29 @@ width:100%;
 .title_btn_mas{
     font-family: "Open sans"
 }
+
+.card
+{
+ /*/ margin-left: 25%;*/
+  /*margin-right: 25%;*/
+  margin-top: 5%;
+  margin-bottom: 2%;
+  background-color: white;
+  padding: 2%;
+  box-shadow:  5px 5px 15px #e1e1e3, -5px -5px 15px #ffffff;
+}
+
+.p{
+    font-size: 20px;
+    font-family: 'Lobster';
+}
+.btn-info{
+    background-color: #799AFA;
+    border-color: #799AFA;
+    color: white;
+}
+
+.btn-info:hover{
+    background-color: #799AFf;
+    border-color: #799AFA;
+}

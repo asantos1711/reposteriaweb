@@ -33,18 +33,27 @@
             </div>
             <div class="col-10 col-s-10 banner">
                 <g:render template="/banner"/>     
-
-                <g:each in="${listaProductos}" var="producto">
-                    <div class="row">    
-                        
-                        <g:each in="${listaFotos[producto.id]}" var="fotos">
-                            <div class="col-3 col-s-3">
-                                <p>${listaFotos.(producto.id)}</p>
-                                <img src="${fotos.url}" class="foto_galeria" height="150">
+                
+                <div class="row">
+                <g:each in="${listaProductos}" var="producto">  
+                        <div class="col-4 col-s-4">
+                            <div class="card">
+                                <img src="${listaFotos[producto.id].first().url}" class="foto_galeria" height="250">
+                                <p class="p">${producto.nombre} -   ${producto.precio} MXN</p>
+                                
+                                <p class="p">${producto.cantidad} ${producto.unidad} </p>
+                                
+                                <div class="row container" style="margin: 1% 1% 1% 1%" >
+                                    <btn  class="btn btn-info col-4 col-s-4" ><i class="fa fa-cart-plus fa-2x" style="color: white; "></i></btn>
+                                    <div class="col-3 col-s-3" ></div>
+                                    <btn  class="btn btn-info col-4 col-s-4" >Detalles</btn>
+                                </div>
+                                
                             </div>
-                        </g:each>
-                    </div>  
+                            
+                        </div>
                  </g:each>
+                </div> 
                            <!--div class="col-4 col-s-4">                        
                                <img src="${resource(dir: 'images', file: 'nuestros_postres/paletas_postres.jpg')}"  class="foto_galeria" id="imagen">
                                <img src="${resource(dir: 'images', file: 'nuestros_postres/frappe_postre.jpg')}"  class=" foto_galeria" id="imagen">
