@@ -30,7 +30,9 @@
     </div>
     
     <div class="col-2 btn_banner">
-        Carrito
+        <g:link controller="carrito" action="index">
+           Carrito
+        </g:link>
     </div>
     <div class="col-2 btn_banner">
         <g:link controller="faqs" action="index">

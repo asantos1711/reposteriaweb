@@ -46,6 +46,7 @@ class PostresController {
        
         if(session?.user == null || session?.username==null ){
             redirect(controller: "usuarios", action: "index")
+            return
         }else if(session.carrito==null){
             initcarrito()
             //flash.message =  "Carrito creado"
@@ -85,7 +86,7 @@ class PostresController {
     double  addProducto(Productos producto){
         
         Pedidos pedido = session.carrito
-        println pedido.idCliente + "-"+pedido.idVenta+ "-"+producto.id
+        //println pedido.idCliente + "-"+pedido.idVenta+ "-"+producto.id
         boolean  isnul =Productoventas.findByIdVentaAndIdProducto(pedido.idVenta,producto.id)==null
        Productoventas  pv =isnul?new Productoventas():Productoventas.findByIdVentaAndIdProducto(pedido.idVenta,producto.id)
         
