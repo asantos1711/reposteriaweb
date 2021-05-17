@@ -35,28 +35,30 @@
                         <div class="comprar_ahora">
                             <div class="row">      
                                 <div class="col-4 col-s-4">                                                 
-                                    <img src="${resource(dir: 'images', file: 'menú/cheesecake.jpg')}"  class="foto_gal_home" id="imagen">
-                               </div>
+                                    <img src="${resource(dir: 'images', file: 'menú/cheesecake.jpg')}"  class="foto_gal_home rounded float-left" id="imagen">
+                                    <div>Cheescake</div>
+                                </div>
                                 <div class="col-4 col-s-4">                                                 
                                     <img src="${resource(dir: 'images', file: 'menú/tartaletas_con_fresa_arándanos_kiwi.jpg')}"  class="foto_gal_home" id="imagen">
-
+                                    <div>Tartaletas de fresa con arandanos</div>
                                </div>
                                 <div class="col-4 col-s-4">                                                 
                                      <img src="${resource(dir: 'images', file: 'nuestros_postres/pastel_postres.jpg')}"  class="foto_gal_home" id="imagen">                                                                        
-                               </div>
+                                     <div>Pastel</div>
+                                </div>
                             </div>
-                            <div style="margin-top: 25px">
+                            <div style="margin-top: 55px">
                                 <button type="button" class="btn btn-shop">Comprar ahora</button>
                             </div>
                         </div>
                         
-                        <div class="row" style="margin-top: 35px">
-                            
+                        <div class="row" style="margin-top: 35px">                            
                             <div class=" col-6 col-s-6">
                               <img src="${resource(dir: 'images', file: 'menú/roles_de_canela.jpg')}"  class="img-rounded foto_home" id="imagen">
                             </div>
                             <div class=" col-6 col-s-6 title_banner">
-                                ¡El más vendido !
+                                ¡El más vendido!                                
+                                <div class="title_mas">Roles de canela</div>                                
                                 <div style="margin-top: 25px">
                                     <button type="button" class="btn btn-shop title_btn_mas">Ver más</button>
                                 </div>
