@@ -1,6 +1,7 @@
 package productos
 
 class Productos {
+    static hasMany = [fotos:Fotosproductos]
     Integer id
     String nombre
     Double precio
@@ -23,7 +24,7 @@ class Productos {
     }
     
     static constraints = {
-    id         nullable:false, blank:false
+    //id         nullable:false, blank:false
     nombre     nullable:false, blank:false
     precio     nullable:false, blank:false
     descripcion nullable:false, blank:false
