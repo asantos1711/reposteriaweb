@@ -27,28 +27,35 @@
                         <div class="row">
                             <div class=" col-6 col-s-6 title_banner">
                                 ¡ Es un placer atenderte !
+                                
+                                <div class="nombre_producto">Tenemos una gran variedad de postres, que te encantaran</div>
                             </div>
                             <div class=" col-6 col-s-6">
                               <img src="${resource(dir: 'images', file: 'inicio_quienes/logotipo_proyecto_web.png')}"  class="img-rounded foto_home" id="imagen">
                             </div>
                         </div>
                         <div class="comprar_ahora">
+                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sub_banner">
+                                Nuestros productos
+                             </div>
                             <div class="row">      
-                                <div class="col-4 col-s-4">                                                 
+                               <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4">                                            
                                     <img src="${resource(dir: 'images', file: 'menú/cheesecake.jpg')}"  class="foto_gal_home rounded float-left" id="imagen">
-                                    <div>Cheescake</div>
+                                    <div class="nombre_producto">Cheescake</div>
                                 </div>
-                                <div class="col-4 col-s-4">                                                 
+                                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4">                                             
                                     <img src="${resource(dir: 'images', file: 'menú/tartaletas_con_fresa_arándanos_kiwi.jpg')}"  class="foto_gal_home" id="imagen">
-                                    <div>Tartaletas de fresa con arandanos</div>
+                                    <div class="nombre_producto">Tartaletas de fresa con arandanos</div>
                                </div>
-                                <div class="col-4 col-s-4">                                                 
+                                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4">                                              
                                      <img src="${resource(dir: 'images', file: 'nuestros_postres/pastel_postres.jpg')}"  class="foto_gal_home" id="imagen">                                                                        
-                                     <div>Pastel</div>
+                                     <div class="nombre_producto">Pastel</div>
                                 </div>
                             </div>
-                            <div style="margin-top: 55px">
+                            <div style="margin-top: 7%">
+                                <g:link controller="Postres" action="index">
                                 <button type="button" class="btn btn-shop">Comprar ahora</button>
+                                </g:link>
                             </div>
                         </div>
                         
@@ -56,7 +63,7 @@
                             <div class=" col-6 col-s-6">
                               <img src="${resource(dir: 'images', file: 'menú/roles_de_canela.jpg')}"  class="img-rounded foto_home" id="imagen">
                             </div>
-                            <div class=" col-6 col-s-6 title_banner">
+                            <div class=" col-6 col-s-6 sub_banner">
                                 ¡El más vendido!                                
                                 <div class="title_mas">Roles de canela</div>                                
                                 <div style="margin-top: 25px">
