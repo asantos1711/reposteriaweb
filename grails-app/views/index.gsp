@@ -32,7 +32,37 @@
                               <img src="${resource(dir: 'images', file: 'inicio_quienes/logotipo_proyecto_web.png')}"  class="img-rounded foto_home" id="imagen">
                             </div>
                         </div>
+                        <div class="comprar_ahora">
+                            <div class="row">      
+                                <div class="col-4 col-s-4">                                                 
+                                    <img src="${resource(dir: 'images', file: 'menú/cheesecake.jpg')}"  class="foto_gal_home" id="imagen">
+                               </div>
+                                <div class="col-4 col-s-4">                                                 
+                                    <img src="${resource(dir: 'images', file: 'menú/tartaletas_con_fresa_arándanos_kiwi.jpg')}"  class="foto_gal_home" id="imagen">
+
+                               </div>
+                                <div class="col-4 col-s-4">                                                 
+                                     <img src="${resource(dir: 'images', file: 'nuestros_postres/pastel_postres.jpg')}"  class="foto_gal_home" id="imagen">                                                                        
+                               </div>
+                            </div>
+                            <div style="margin-top: 25px">
+                                <button type="button" class="btn btn-shop">Comprar ahora</button>
+                            </div>
+                        </div>
                         
+                        <div class="row" style="margin-top: 35px">
+                            
+                            <div class=" col-6 col-s-6">
+                              <img src="${resource(dir: 'images', file: 'menú/roles_de_canela.jpg')}"  class="img-rounded foto_home" id="imagen">
+                            </div>
+                            <div class=" col-6 col-s-6 title_banner">
+                                ¡El más vendido !
+                                <div style="margin-top: 25px">
+                                    <button type="button" class="btn btn-shop title_btn_mas">Ver más</button>
+                                </div>
+                            </div>
+                           
+                        </div>
                     </div>
                 </div>
                  <div class="col-1 col-s-1">
@@ -41,4 +71,6 @@
 	</body>
         
         <g:render template="footer"/>
+        
+        <div style="margin-top: 25px"></div>
 </html>

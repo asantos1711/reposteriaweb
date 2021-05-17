@@ -33,8 +33,8 @@
                                 <g:each in="${listfaqs}">
                                     <br>
                                     <div style="align-items: center">
-                                        <p style="font-weight: bold">Pregunta: ${it.pregunta}</p>
-                                        <p>respuesta: ${it.respuesta}</p>
+                                        <p style="font-weight: bold">${it.pregunta}</p>
+                                        <p>${it.respuesta}</p>
                                      </div>
                                  </g:each>
                             </div>
