@@ -37,9 +37,9 @@
                 <g:each in="${listaProductos}" var="producto">
                     <div class="row">    
                         <p>${producto.id}</p>
-                        <g:each in="${listaFotos[producto.id]}" var="fotos">
+                        <g:each in="${listaFotos(producto.id)}" var="fotos">
                             <div class="col-4 col-s-4">
-                                <p>${producto.id}</p>
+                                <p>${fotos.id}</p>
                                 <!--img src="${fotos[producto.id].url}"  class="foto_galeria"-->
                             </div>
                         </g:each>
