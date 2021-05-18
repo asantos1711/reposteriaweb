@@ -38,8 +38,26 @@
                 </g:if>
                 <div class="col-12 col-s-12">
                     <div class="card">
+                        <p class="pt">Carrito de compras</p>
                         <div class="row">
-                            
+                            <div class="col-8 col-s-8">
+                            </div>
+                            <div class="col-4 col-s-4">
+                                <p class="p">Su Pedido </p>
+                                <g:each in="${listProductosVentas}" var="pv">  
+                                    <div class="col-12 col-s-12">
+                                        <% 
+                                            def nombre 
+                                            listProductos.each{it->
+                                                if(it.id == pv.id){
+                                                    nombre=it.nombre
+                                                }
+                                            }
+                                        %>
+                                        <p>${nombre} -> ${pv.cantidad}</p>
+                                    </div>
+                                </g:each>
+                            </div>
                         </div>
                     </div>
 
