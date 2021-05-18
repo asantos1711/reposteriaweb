@@ -25,10 +25,10 @@
                     <div class="column">                        
                         <g:render template="../banner"/>
                         <div class="row">
-                            <div class=" col-6 col-s-6 title_banner">
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6 title_banner">
                                 ¡FAQS !
                             </div>
-                            <div class="col-6 col-s-6">
+                            <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
                           
                                 <g:each in="${listfaqs}">
                                     <br>
