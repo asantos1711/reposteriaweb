@@ -28,7 +28,7 @@
                     <g:render template="/banner"/>
                 </div>
                 <div class="row ">
-                    <div class=" col-6 col-s-6">
+                    <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
                         <div class="column">
                             <div class="title_banner">Iniciar sesión</div>
                             <div>
@@ -62,7 +62,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" col-6 col-s-6">
+                    <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
                       <img src="${resource(dir: 'images', file: 'inicio_quienes/logotipo_proyecto_web.png')}"  class="img-rounded foto_home" id="imagen">
                     </div>
                     

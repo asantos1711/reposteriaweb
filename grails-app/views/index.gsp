@@ -25,12 +25,12 @@
                     <div class="column">                        
                         <g:render template="banner"/>
                         <div class="row">
-                            <div class=" col-6 col-s-6 title_banner">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 title_banner">
                                 ¡ Es un placer atenderte !
                                 
                                 <div class="nombre_producto">Tenemos una gran variedad de postres, que te encantaran</div>
                             </div>
-                            <div class=" col-6 col-s-6">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                               <img src="${resource(dir: 'images', file: 'inicio_quienes/logotipo_proyecto_web.png')}"  class="img-rounded foto_home" id="imagen">
                             </div>
                         </div>
@@ -38,18 +38,24 @@
                              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sub_banner">
                                 Nuestros productos
                              </div>
-                            <div class="row">      
-                               <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4">                                            
-                                    <img src="${resource(dir: 'images', file: 'menú/cheesecake.jpg')}"  class="foto_gal_home rounded float-left" id="imagen">
-                                    <div class="nombre_producto">Cheescake</div>
+                            <div class="row container">   
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 ">                                            
+                                    <div class="container">
+                                         <img src="${resource(dir: 'images', file: 'menú/cheesecake.jpg')}"  class="foto_gal_home rounded float-left" id="imagen">
+                                         <div class="nombre_producto">Cheescake</div>
+                                     </div>
                                 </div>
-                                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4">                                             
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 ">   
+                                    <div class="container">
                                     <img src="${resource(dir: 'images', file: 'menú/tartaletas_con_fresa_arándanos_kiwi.jpg')}"  class="foto_gal_home" id="imagen">
                                     <div class="nombre_producto">Tartaletas de fresa con arandanos</div>
+                                    </div>
                                </div>
-                                <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4">                                              
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 ">             
+                                    <div class="container">
                                      <img src="${resource(dir: 'images', file: 'nuestros_postres/pastel_postres.jpg')}"  class="foto_gal_home" id="imagen">                                                                        
                                      <div class="nombre_producto">Pastel</div>
+                                    </div>
                                 </div>
                             </div>
                             <div style="margin-top: 7%">
@@ -60,15 +66,17 @@
                         </div>
                         
                         <div class="row" style="margin-top: 35px">                            
-                            <div class=" col-6 col-s-6">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
                               <img src="${resource(dir: 'images', file: 'menú/roles_de_canela.jpg')}"  class="img-rounded foto_home" id="imagen">
                             </div>
-                            <div class=" col-6 col-s-6 sub_banner">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  sub_banner">
                                 ¡El más vendido!                                
-                                <div class="title_mas">Roles de canela</div>                                
-                                <div style="margin-top: 25px">
-                                    <button type="button" class="btn btn-shop title_btn_mas">Ver más</button>
-                                </div>
+                                <div class="title_mas">Roles de canela</div> 
+                                <g:link controller="Postres" action="index">
+                                    <div style="margin-top: 25px">
+                                        <button type="button" class="btn btn-shop title_btn_mas">Ver más</button>
+                                    </div>
+                                </g:link>
                             </div>
                            
                         </div>

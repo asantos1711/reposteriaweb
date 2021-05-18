@@ -38,7 +38,7 @@
                 </g:if>
                 <div class="row">
                 <g:each in="${listaProductos}" var="pro">  
-                        <div class="col-4 col-s-4">
+                        <div class="col-xs-4 col-sm-6 col-md-6 col-lg-4">
                             <div class="card">
                                 <img src="${listaFotos[pro.id].first().url}" class="foto_galeria" height="250">
                                 <p class="p">${pro.nombre} -   ${pro.precio} MXN</p>

@@ -40,24 +40,45 @@
                     <div class="card">
                         <p class="pt">Carrito de compras</p>
                         <div class="row">
-                            <div class="col-8 col-s-8">
-                            </div>
-                            <div class="col-4 col-s-4">
+                            
                                 <p class="p">Su Pedido </p>
-                                <g:each in="${listProductosVentas}" var="pv">  
-                                    <div class="col-12 col-s-12">
-                                        <% 
-                                            def nombre 
-                                            listProductos.each{it->
-                                                if(it.id == pv.id){
-                                                    nombre=it.nombre
-                                                }
-                                            }
-                                        %>
-                                        <p>${nombre} -> ${pv.cantidad}</p>
-                                    </div>
-                                </g:each>
-                            </div>
+                                
+                                <table class="table">
+					  <thead>
+					    <tr>
+					      <th scope="col">Producto</th>
+					      <th scope="col">Cantidad</th>
+					      <th scope="col">Precio</th>
+					      <th scope="col">Total</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    
+					    <g:each in="${listProductosVentas}" var="pv">  
+                                                <div class="col-12 col-s-12">
+                                                    <% 
+                                                        def nombre 
+                                                        def precio
+                                                        double sub
+                                                        listProductos.each{it->
+                                                            if(it.id == pv.id){
+                                                                nombre=it.nombre
+                                                                precio=it.precio
+                                                                sub=it.precio*pv.cantidad
+                                                            }
+                                                        }
+                                                    %>
+                                                    <tr>
+                                                        <td>${nombre}</td>
+                                                        <td>${(Integer)pv.cantidad}</td>
+                                                        <td>${precio}</td>
+                                                        <td>${sub}</td>
+                                                     </tr>
+                                                </div>
+                                            </g:each>
+					  </tbody>
+                                </table>
+                                
                         </div>
                     </div>
 
